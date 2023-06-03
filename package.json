@@ -1,16 +1,19 @@
 {
-  "name": "modal-form",
-  "version": "0.1.0",
-  "private": true,
+  "name": "add-bootstrap-in-nextjs",
+  "version": "1.0.0",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "post-update": "yarn upgrade --latest"
   },
   "dependencies": {
-    "next": "13.4.4",
+    "bootstrap": "5.2.2",
+    "next": "13.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
-  }
+  },
+  "license": "MIT",
+  "keywords": [],
+  "description": ""
 }
