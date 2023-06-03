@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const SubmitButton = () => {
+const GetInTouch = () => {
   const [isModalOpen, setModalOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -127,4 +127,4 @@ const SubmitButton = () => {
   );
 };
 
-export default SubmitButton;
+export default GetInTouch;

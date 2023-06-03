@@ -1,7 +1,7 @@
 import React from 'react';
-import SubmitButton from './SubmitButton';
+import GetInTouch from './GetInTouch';
 
-const Post = () => {
+const Homepage = () => {
   return (
     <div>
       {/* Your main content */}
@@ -9,9 +9,9 @@ const Post = () => {
       <p>Some content...</p>
 
       {/* Button to open form submit modal */}
-      <SubmitButton />
+      <GetInTouch />
     </div>
   );
 };
 
-export default Post;
+export default Homepage;
