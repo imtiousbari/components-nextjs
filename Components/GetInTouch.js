@@ -29,10 +29,7 @@ const GetInTouch = () => {
   };
 
   return (
-    <div
-      className="d-flex align-items-center justify-content-center"
-      style={{ height: "100vh" }}
-    >
+    <div className="d-flex align-items-center justify-content-center vh-100">
       <button className="btn btn-primary" onClick={openModal}>
         Get In Touch
       </button>
@@ -44,20 +41,20 @@ const GetInTouch = () => {
               <div className="modal-header">
                 <button
                   type="button"
-                  class="btn-close ms-auto"
+                  className="btn-close ms-auto"
                   aria-label="Close"
                   onClick={closeModal}
-                >
-                  {" "}
-                </button>
+                ></button>
               </div>
-              <div className="modal-body ">
+              <div className="modal-body">
                 <div className="text-center mb-4">
                   <h5 className="modal-title">Get In Touch</h5>
                 </div>
                 <form onSubmit={handleSubmit}>
-                  <div className="form-group mb-3">
-                    <label htmlFor="name">Full Name</label>
+                  <div className="mb-3">
+                    <label htmlFor="name" className="form-label">
+                      Full Name
+                    </label>
                     <input
                       type="text"
                       className="form-control"
@@ -68,8 +65,10 @@ const GetInTouch = () => {
                       placeholder="Enter your name"
                     />
                   </div>
-                  <div className="form-group mb-3">
-                    <label htmlFor="email">Business Email</label>
+                  <div className="mb-3">
+                    <label htmlFor="email" className="form-label">
+                      Business Email
+                    </label>
                     <input
                       type="email"
                       className="form-control"
@@ -80,8 +79,10 @@ const GetInTouch = () => {
                       placeholder="contact@mail.com"
                     />
                   </div>
-                  <div className="form-group mb-3">
-                    <label htmlFor="phone">Phone</label>
+                  <div className="mb-3">
+                    <label htmlFor="phone" className="form-label">
+                      Phone
+                    </label>
                     <input
                       type="text"
                       className="form-control"
@@ -92,8 +93,10 @@ const GetInTouch = () => {
                       placeholder="Enter your phone number"
                     />
                   </div>
-                  <div className="form-group mb-3">
-                    <label htmlFor="message">Message</label>
+                  <div className="mb-3">
+                    <label htmlFor="message" className="form-label">
+                      Message
+                    </label>
                     <textarea
                       className="form-control"
                       id="message"
@@ -106,7 +109,10 @@ const GetInTouch = () => {
                   </div>
 
                   <div className="d-flex justify-content-end">
-                    <button type="submit" className="btn btn-primary mt-3">
+                    <button
+                      type="submit"
+                      className="btn btn-primary w-100 mt-3"
+                    >
                       Submit
                     </button>
                   </div>
